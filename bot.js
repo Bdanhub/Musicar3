@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "1!";
+const prefix = "3!";
 /////////////////////////
 ////////////////////////
 
@@ -318,7 +318,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '1!help') {
+    if (message.content === '3!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت !1**')
@@ -392,7 +392,7 @@ if (message.content.startsWith(prefix + "uptime")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame(` 1!help .`,'');
+  client.user.setGame(` 3!help .`,'');
   console.log('---------------');
   console.log('Desert Bot Is Online')
   console.log('---------------')
