@@ -392,12 +392,11 @@ if (message.content.startsWith(prefix + "uptime")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame(` 3!help .`,'');
+  client.user.setGame('3!help 3!play •♥','https://www.twitch.tv/peery13');
   console.log('---------------');
-  console.log('Desert Bot Is Online')
+  console.log(' Bot Is Online')
   console.log('---------------')
 });
-
 
 
 
