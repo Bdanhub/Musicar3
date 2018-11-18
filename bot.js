@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "3!";
+const prefix = "3";
 /////////////////////////
 ////////////////////////
 
@@ -318,7 +318,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '3!help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت !1**')
@@ -392,7 +392,7 @@ if (message.content.startsWith(prefix + "uptime")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame('3!help 3!play •♥','https://www.twitch.tv/peery13');
+  client.user.setGame('1help 1play ♥','https://www.twitch.tv/peery13');
   console.log('---------------');
   console.log(' Bot Is Online')
   console.log('---------------')
